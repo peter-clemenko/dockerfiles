@@ -6,7 +6,7 @@
 # Example use case:
 # https://github.com/andygrunwald/FOM-LaTeX-Template
 
-FROM debian:buster-slim
+FROM debian:10.10-slim
 LABEL maintainer "Christian Koep <christiankoep@gmail.com>"
 
 RUN apt-get update && apt-get install -y \
