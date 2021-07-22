@@ -17,7 +17,7 @@
 #	--name notify-osd \
 #	jess/notify-osd
 
-FROM debian:buster-slim
+FROM debian:10.10-slim
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
 
 RUN apt-get update && apt-get install -y \
