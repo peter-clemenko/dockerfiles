@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.15
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
