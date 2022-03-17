@@ -1,9 +1,9 @@
-FROM alpine:latest AS cl-k8s
+FROM alpine:3.15 AS cl-k8s
 RUN apk add --no-cache \
 	git
 RUN git clone https://github.com/brendandburns/cl-k8s.git /cl-k8s
 
-FROM alpine:latest
+FROM alpine:3.15
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
 
 RUN apk --no-cache add \
