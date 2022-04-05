@@ -21,7 +21,7 @@ WORKDIR /go/src/github.com/v2tec/watchtower
 RUN glide install
 RUN go build -o /usr/bin/watchtower
 
-FROM alpine:latest
+FROM alpine:3.15.4
 COPY --from=builder /usr/bin/watchtower /usr/bin/watchtower
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
 
