@@ -9,7 +9,7 @@ ENV GOPATH /go
 
 RUN go get github.com/coreos/clair/cmd/clair
 
-FROM alpine:latest
+FROM alpine:3.15.4
 
 RUN apk --no-cache add \
 	ca-certificates \
