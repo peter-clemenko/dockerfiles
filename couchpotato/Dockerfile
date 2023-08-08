@@ -9,7 +9,7 @@
 # 	--name couchpotato \
 # 	jess/couchpotato
 #
-FROM alpine:latest
+FROM alpine:3.18.3
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
 
 # machine parsable metadata, for https://github.com/pycampers/dockapt
