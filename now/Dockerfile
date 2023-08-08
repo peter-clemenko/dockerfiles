@@ -1,4 +1,4 @@
-FROM alpine:latest as builder
+FROM alpine:3.18.3 as builder
 MAINTAINER Jessica Frazelle <jess@linux.com>
 
 RUN	apk add --no-cache \
@@ -14,7 +14,7 @@ RUN curl -sSL -o "/tmp/now.gz" "https://github.com/zeit/now-cli/releases/downloa
 	&& chmod +x /usr/bin/now \
 	&& rm -rf "/tmp/now.gz"
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 RUN apk add --no-cache \
 	libstdc++
